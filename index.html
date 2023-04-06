@@ -30,13 +30,16 @@
     <!-- main -->
     <main>
         <!-- keliling segitiga -->
-        <!--  -->
         <section id="keliling">
             <div class="card">
+                <!-- title -->
                 <div class="card-title">
                     <h2>Keliling Segitiga</h2>
                 </div>
+                <!-- and title -->
+                <!-- image -->
                 <img class="img" src="assets/img/kelililng.png" alt="rumus keliling segitiga">
+                <!-- and image -->
                 <div class="rumus">
                     <h5>Rumus Keliling segitiga yaitu:</h5>
                     <p>K = S1 + S2 + S3</p>
@@ -48,65 +51,82 @@
                     <p>S2 = Sisi B</p>
                     <p>S2 = Sisi C</p>
                 </div>
+                <!-- form -->
                 <div class="form">
                     <h2>Hitung Keliling Segitiga</h2>
-                    <form class="form-hitung" action="">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <button class="tombol" type="submit">Hitung</button>
+                    <form class="form-hitung" id="resetKeliling">
+                        <label for="">Masukkan Sisi A</label>
+                        <input type="number" id="s1" name="s1" required>
+                        <label for="">Masukkan Sisi B</label>
+                        <input type="number" id="s2" name="s2" required>
+                        <label for="">Masukkan Sisi C</label>
+                        <input type="number" id="s3" name="s2" required>
+                        <button class="tombol" type="submit" onclick="return keliling()">Hitung</button>
+                        <p>K = <span id="hasilnya"></span></p>
+
                     </form>
                 </div>
-                <p>K = S1 + S2 + S3</p>
-                <p>K = S1 + S2 + S3</p>
-                <p>K = </p>
+                <!-- and form -->
                 <div class="reset">
-                    <button class="btn-reset">Reset</button>
+                    <button class="btn-reset" onclick="kelilingReset()" value="Reset">Reset</button>
                 </div>
             </div>
         </section>
-        <!--  -->
+        <!-- end keliling segitiga -->
+        <!-- luas segitiga -->
         <section id="luas">
             <div class="card">
+                <!-- title -->
                 <div class="card-title">
                     <h2>Luas Segitiga</h2>
                 </div>
+                <!-- and title -->
                 <img class="img" src="assets/img/luas.webp" alt="luas segitiga">
+                <!-- rumus -->
                 <div class="rumus">
                     <h5>Rumus luas segitiga yaitu:</h5>
                     <p>L = 1/2 x T x A</p>
                 </div>
+                <!-- and rumus -->
+                <!-- keterangan -->
                 <div class="keterangan">
                     <p>Diamana</p>
                     <p>T = Tinggi</p>
                     <p>A = Alas</p>
                     <p>L = Luas</p>
                 </div>
+                <!-- keterangan -->
+                <!-- form -->
                 <div class="form">
                     <h2>Hitung Luas Segitiga</h2>
-                    <form class="form-hitung" action="">
-                        <input type="text">
-                        <input type="text">
-                        <button  class="tombol" type="submit">Hitung</button>
+                    <form class="form-hitung" action="" id="resetLuas">
+                        <label for="">Masukkan Alas</label>
+                        <input type="text" id="alas" name="alas">
+                        <label for="">Masukkan tinggi</label>
+                        <input type="text" id="tinggi" name="tinggi">
+                        <button class="tombol" type="submit" onclick="return luas()">Hitung</button>
+                        <p>L = <span id="hasil"></span></p>
+
                     </form>
                 </div>
-                <p>L = 1/2 + A x T</p>
-                <p>L = 1/2 + A x T</p>
-                <p>L = </p>
+                <!-- and form -->
                 <div class="reset">
-                    <button class="btn-reset">Reset</button>
+                    <button class="btn-reset" onclick="luasReset()" value="Reset"">Reset</button>
                 </div>
             </div>
         </section>
-        <!--  -->
+        <!-- and luas segitiga -->
 
     </main>
     <!-- end main -->
+
     <!-- footer -->
     <footer>
         &copy; Copyright 2023 Syaiful Rizal
     </footer>
     <!-- and footer -->
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
